@@ -1,0 +1,96 @@
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.urls a:hover {
+  text-decoration: underline;
+  color: rgb(96, 4, 4);
+}
+.header {
+  background-color: rgb(233, 233, 233);
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.logos {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+}
+.gso {
+  height: 90px;
+  width: auto;
+}
+.xtd {
+  height: 90px;
+  width: auto;
+}
+.abrir {
+  background-color: transparent;
+  border: none;
+  display: none;
+}
+.links {
+  background-color: rgb(213, 213, 213);
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.urls {
+  color: rgb(192, 3, 3);
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: auto;
+  gap: 20px;
+}
+.rrss {
+  display: flex;
+  align-items: center;
+  height: auto;
+  gap: 5px;
+}
+.rrss a {
+  margin-top: auto;
+  height: auto;
+  display: flex;
+}
+.rrss img:hover {
+  scale: 110%;
+}
+
+.abrir {
+  display: none;
+}
+@media screen and (max-width: 860px) {
+  .urls li {
+    display: none;
+  }
+  .links {
+    justify-content: space-between;
+  }
+  .abrir {
+    display: flex;
+  }
+}
+@media screen and (max-width: 670px) {
+  .logos img {
+    height: 50px;
+  }
+  .rrss img {
+    height: 30px;
+  }
+}

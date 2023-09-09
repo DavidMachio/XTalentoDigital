@@ -1,0 +1,35 @@
+.footer {
+  background-color: rgb(233, 233, 233);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+}
+.generaciond {
+  width: 280px;
+  height: auto;
+}
+.address p {
+  padding: 5px 0;
+  text-align: center;
+}
+.moreinfo li {
+  padding: 5px 0;
+  color: red;
+  font-weight: 600;
+  text-align: center;
+}
+.moreinfo a:hover {
+  text-decoration: underline;
+}
+.social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+@media screen and (max-width: 860px) {
+  .footer {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
