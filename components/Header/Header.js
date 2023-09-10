@@ -10,7 +10,7 @@ const template = () => {
     <nav class="nav">
     <button class="abrir-menu" id="abrir"><img src="icons/hamburguer.png"/></button>
       <ul class="nav-list" id="nav-list">
-        <button class="cerrar-menu" id="cerrar"><img src="icons/cerrar.png"/></button>
+        <button class="cerrar-menu" id="cerrar">cerrar</button>
         <li><a href="#null">¿Qué es XTD?</a></li>
         <li><a href="#null">Cursos</a></li>
         <li><a href="#null">Becas</a></li>
