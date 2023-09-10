@@ -43,7 +43,7 @@ const courses = [
     month: "Sep",
     age: 2023,
     title: "English for Digital Workers III Edición",
-    place: "Embajadores(Madrid)",
+    place: "Embajadores (Madrid)",
     duration: "36h",
     seats: "20",
     type: "Presencial",

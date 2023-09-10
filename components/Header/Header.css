@@ -22,7 +22,7 @@ a {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 10px;
+  padding: 10px 30px;
 }
 .gso {
   height: 90px;
@@ -32,14 +32,18 @@ a {
   height: 90px;
   width: auto;
 }
-.abrir-menu,
-.cerrar-menu {
-  background-color: transparent;
-  border: none;
+.abrir-menu {
+  /*Si quito el margin se me centra el boton¿porque?*/
   display: none;
 }
 .cerrar-menu {
   display: none;
+}
+.cerrar-menu img {
+  height: 25px;
+  margin-top: 10px;
+  margin-left: 20px;
+  filter: invert(100);
 }
 .nav {
   background-color: rgb(213, 213, 213);
@@ -79,42 +83,48 @@ a {
 @media screen and (max-width: 860px) {
   .abrir-menu,
   .cerrar-menu {
-    border: 2px solid red;
-    display: block;
+    display: flex;
     justify-content: start;
-    padding-left: 10px;
-    height: 30px;
+    margin: 10px;
+    background-color: transparent;
+    border: none;
+    height: auto;
   }
   .nav-list {
+    gap: 0;
     opacity: 0;
     visibility: hidden;
-  }
-  .nav-list {
+    width: 342px;
     flex-direction: column;
     position: absolute;
-    top: 114px;
+    top: 113px;
     left: 0;
     bottom: 0;
-    padding: 20px 300px 0 40px;
+    right: 0;
     background-color: rgb(112, 19, 19);
-    justify-content: center;
-    align-items: center;
-    box-shadow: 400px 1px 0px 0px rgba(0, 0, 0, 0.75);
-  }
-  .cerrar-menu img {
-    scale: 10%;
-  }
-  .cerrar-menu {
-    display: flex;
-    align-items: start;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: left;
+    box-shadow: 0 100vmax 0 100vmax rgba(0, 0, 0, 0.75);
   }
   .nav-list li a {
-    color: rgb(231, 231, 231);
+    padding: auto;
   }
+
   .nav-list.visible {
     opacity: 1;
     visibility: visible;
+    display: flex;
+  }
+  .nav-list.visible li {
+    width: 100%;
+    padding: 20px;
+    color: white;
+  }
+  .nav-list.visible li:hover {
+    width: 100%;
+    padding: 20px;
+    color: rgb(192, 6, 6);
+    background-color: aliceblue;
   }
 }
 @media screen and (max-width: 670px) {

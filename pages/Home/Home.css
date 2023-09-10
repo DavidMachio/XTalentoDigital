@@ -210,3 +210,12 @@ h1 {
   width: 100%;
   object-fit: cover;
 }
+
+@media screen and (max-width: 1010px) {
+  .course {
+    width: 95vw;
+  }
+  .course-group {
+    justify-content: center;
+  }
+}

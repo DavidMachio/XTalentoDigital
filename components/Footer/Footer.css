@@ -2,15 +2,16 @@
   background-color: rgb(233, 233, 233);
   display: flex;
   justify-content: space-between;
-  padding: 10px 15px;
+  padding: 20px 15px 40px 10px;
 }
 .generaciond {
   width: 280px;
   height: auto;
 }
-.address p {
-  padding: 5px 0;
-  text-align: center;
+.address {
+  padding: 5px 10px;
+  text-align: left;
+  gap: 5px;
 }
 .moreinfo li {
   padding: 5px 0;
@@ -31,5 +32,9 @@
   .footer {
     flex-direction: column;
     gap: 20px;
+  }
+  .address p {
+    text-align: center;
+    padding-top: 5px;
   }
 }
