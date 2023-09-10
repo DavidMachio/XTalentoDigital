@@ -5,7 +5,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
-.urls a:hover {
+.nav a:hover {
   text-decoration: underline;
   color: rgb(96, 4, 4);
 }
@@ -32,12 +32,16 @@ a {
   height: 90px;
   width: auto;
 }
-.abrir {
+.abrir-menu,
+.cerrar-menu {
   background-color: transparent;
   border: none;
   display: none;
 }
-.links {
+.cerrar-menu {
+  display: none;
+}
+.nav {
   background-color: rgb(213, 213, 213);
   height: 60px;
   width: 100%;
@@ -46,13 +50,13 @@ a {
   align-items: center;
   padding: 0 20px;
 }
-.urls {
+.nav-list {
   color: rgb(192, 3, 3);
   font-size: 20px;
   font-weight: 600;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   height: auto;
   width: auto;
   gap: 20px;
@@ -72,21 +76,51 @@ a {
   scale: 110%;
 }
 
-.abrir {
-  display: none;
-}
 @media screen and (max-width: 860px) {
-  .urls li {
-    display: none;
+  .abrir-menu,
+  .cerrar-menu {
+    border: 2px solid red;
+    display: block;
+    justify-content: start;
+    padding-left: 10px;
+    height: 30px;
   }
-  .links {
-    justify-content: space-between;
+  .nav-list {
+    opacity: 0;
+    visibility: hidden;
   }
-  .abrir {
+  .nav-list {
+    flex-direction: column;
+    position: absolute;
+    top: 114px;
+    left: 0;
+    bottom: 0;
+    padding: 20px 300px 0 40px;
+    background-color: rgb(112, 19, 19);
+    justify-content: center;
+    align-items: center;
+    box-shadow: 400px 1px 0px 0px rgba(0, 0, 0, 0.75);
+  }
+  .cerrar-menu img {
+    scale: 10%;
+  }
+  .cerrar-menu {
     display: flex;
+    align-items: start;
+    justify-content: center;
+  }
+  .nav-list li a {
+    color: rgb(231, 231, 231);
+  }
+  .nav-list.visible {
+    opacity: 1;
+    visibility: visible;
   }
 }
 @media screen and (max-width: 670px) {
+  .nav-list {
+    top: 74px;
+  }
   .logos img {
     height: 50px;
   }

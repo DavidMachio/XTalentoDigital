@@ -7,9 +7,10 @@ const template = () => {
         <a href="https://portalentodigital.fundaciononce.es/" target="_blank"><img class="xtd" src="./icons/xtd.png"/ alt="Logotipo de por talento digital"></a>
         <a href="https://gruposocialonce.com/" target="_blank"><img class="gso" src="./icons/gso.png"/ alt="Logotipo grupo social once"></a>
       </div>
-    <nav class="links">
-      <ul class="urls">
-        <button class="abrir" id="abrir"><img src="icons/hamburguer.png"/></button>
+    <nav class="nav">
+    <button class="abrir-menu" id="abrir"><img src="icons/hamburguer.png"/></button>
+      <ul class="nav-list" id="nav-list">
+        <button class="cerrar-menu" id="cerrar"><img src="icons/cerrar.png"/></button>
         <li><a href="#null">¿Qué es XTD?</a></li>
         <li><a href="#null">Cursos</a></li>
         <li><a href="#null">Becas</a></li>
@@ -30,6 +31,17 @@ const template = () => {
 };
 const Header = () => {
   document.querySelector("header").innerHTML = template();
+
+  const navList = document.querySelector("#nav-list");
+  const abrir = document.querySelector("#abrir");
+  const cerrar = document.querySelector("#cerrar");
+
+  abrir.addEventListener("click", () => {
+    navList.classList.add("visible");
+  });
+  cerrar.addEventListener("click", () => {
+    navList.classList.remove("visible");
+  });
 };
 
 export default Header;
