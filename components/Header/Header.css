@@ -4,6 +4,7 @@ li {
 a {
   text-decoration: none;
   color: inherit;
+  transition: all 0.2s linear;
 }
 .nav a:hover {
   text-decoration: underline;

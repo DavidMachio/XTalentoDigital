@@ -12,7 +12,7 @@ const template = () => {
     </div>
     <div class="moreinfo">
     <ul>
-    <li><a href="https://portalentodigital.fundaciononce.es/accesibilidad" target="_blank">Accesibildad</a></li>
+    <li><a href="https://portalentodigital.fundaciononce.es/accesibilidad" target="_blank">Accesibilidad</a></li>
     <li><a href="https://portalentodigital.fundaciononce.es/aviso-legal" target="_blank">Aviso legal</a></li>
     <li><a href="https://portalentodigital.fundaciononce.es/politica-de-privacidad" target="_blank">Política de privacidad</a></li>
     <li><a href="https://portalentodigital.fundaciononce.es/formulario-contacto" target="_blank">Contacto</a></li>

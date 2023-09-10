@@ -35,8 +35,8 @@ const printCourses = () => {
              </ul>
            <container class="information">
              <section class="title">
-               <h3><a href="#null">${course.title}</a></h3>
-               <button class="subscribe">Inscríbete</button>
+               <h3><a href=${course.url} target="_blank">${course.title}</a></h3>
+               <button class="subscribe" href= >Inscríbete</button>
              </section>
              <section class="place">
                <div>
@@ -70,7 +70,7 @@ const printCourses = () => {
                </span>
                <img
                  class="photo-course"
-                 src=${course.img}
+                 src=${course.img} alt="${course.alt}"
                />
              </section>
            </container>

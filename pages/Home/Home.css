@@ -179,6 +179,12 @@ h1 {
   font-weight: 600;
   text-transform: uppercase;
   padding: 5px 10px;
+  transition: all 0.1s linear;
+}
+.subscribe:hover {
+  background-color: rgb(161, 8, 8);
+  color: white;
+  scale: 105%;
 }
 
 .site {

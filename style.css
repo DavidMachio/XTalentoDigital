@@ -10,6 +10,10 @@
 p {
   font-size: 17px;
 }
+a {
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
 a:hover {
   text-decoration: underline;
 }

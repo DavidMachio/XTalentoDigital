@@ -2,30 +2,32 @@
   background-color: rgb(233, 233, 233);
   display: flex;
   justify-content: space-between;
-  padding: 20px 15px 40px 10px;
+  padding: 20px 10px 40px 10px;
 }
 .generaciond {
   width: 280px;
   height: auto;
 }
-.address {
-  padding: 5px 10px;
+.address p {
   text-align: left;
-  gap: 5px;
+  padding-top: 7px;
 }
 .moreinfo li {
   padding: 5px 0;
   color: red;
   font-weight: 600;
   text-align: center;
+  transition: all 0.1s linear;
 }
-.moreinfo a:hover {
+.moreinfo li:hover {
+  color: rgb(151, 0, 0);
   text-decoration: underline;
 }
 .social-media {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 5px;
   gap: 10px;
 }
 @media screen and (max-width: 860px) {
