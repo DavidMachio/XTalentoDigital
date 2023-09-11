@@ -1,5 +1,5 @@
 footer {
-  background-color: rgb(233, 233, 233);
+  background-color: var(--boxes);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -10,18 +10,19 @@ footer {
   height: auto;
 }
 .address p {
+  color: var(--primary);
   text-align: left;
   padding-top: 7px;
 }
 .moreinfo li {
   padding: 5px 0;
-  color: red;
+  color: var(--titles);
   font-weight: 600;
   text-align: center;
   transition: all 0.1s linear;
 }
-.moreinfo li:hover {
-  color: rgb(151, 0, 0);
+.moreinfo a:hover {
+  color: var(--titleshover);
   text-decoration: underline;
 }
 

@@ -18,7 +18,7 @@
   padding: 0 10px;
 }
 .info-programa h2 {
-  color: red;
+  color: var(--titles);
   font-size: 30px;
   padding-bottom: 20px;
 }
@@ -32,7 +32,7 @@
   text-decoration: underline;
 }
 .text-becas {
-  color: white;
+  color: var(--secondary);
   width: 500px;
   position: absolute;
   text-align: center;
@@ -48,7 +48,7 @@ h1 {
   margin-left: 60px;
 }
 .decoration {
-  background-color: red;
+  background-color: var(--titles);
   height: 20px;
   width: 150px;
   margin-left: 60px;
@@ -107,11 +107,10 @@ h1 {
   gap: 10px;
 }
 .course {
-  background-color: rgb(239, 239, 239);
+  background-color: var(--secondary);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 2px solid rgb(200, 200, 200);
   width: 48vw;
   padding: 10px;
   -webkit-box-shadow: 0px 0px 29px -1px #818181;
@@ -160,8 +159,8 @@ h1 {
 .title {
   display: flex;
   justify-content: space-around;
-  background-color: rgb(223, 223, 223);
-  color: rgb(161, 8, 8);
+  background-color: var(--boxes);
+  color: var(--titles);
   font-size: 20px;
   align-items: center;
   width: 100%;
@@ -173,8 +172,8 @@ h1 {
   margin: auto;
 }
 .subscribe {
-  color: rgb(161, 8, 8);
-  background-color: white;
+  color: var(--titles);
+  background-color: var(--secondary);
   border: 1px solid grey;
   font-weight: 600;
   text-transform: uppercase;
@@ -182,8 +181,8 @@ h1 {
   transition: all 0.1s linear;
 }
 .subscribe:hover {
-  background-color: rgb(161, 8, 8);
-  color: white;
+  background-color: var(--titleshover);
+  color: var(--secondary);
   scale: 105%;
 }
 
@@ -203,7 +202,7 @@ h1 {
 }
 .solid {
   height: 1px;
-  background-color: #818181;
+  background-color: var(--boxes);
   margin-top: 10px;
   margin-bottom: 10px;
 }

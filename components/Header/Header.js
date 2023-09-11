@@ -11,12 +11,12 @@ const template = () => {
     <button class="abrir-menu" id="abrir"><img src="icons/hamburguer.png"/></button>
       <ul class="nav-list" id="nav-list">
       <button class="cerrar-menu" id="cerrar"><img src="icons/cerrar.png"/></button>
-        <li><a href="#null">¿Qué es XTD?</a></li>
+        <li><a href="#null" id="xtdnav">¿Qué es XTD?</a></li>
         <li><a href="#null" id="cursos">Cursos</a></li>
-        <li><a href="#null">Becas</a></li>
-        <li><a href="#null">Blog</a></li>
-        <li><a href="#null">Alumni</a></li>
-        <li><a href="#null">Colaboradores</a></li>
+        <li><a href="#null" id="becas">Becas</a></li>
+        <li><a href="#null" id="blog">Blog</a></li>
+        <li><a href="#null" id="alumni">Alumni</a></li>
+        <li><a href="#null"id="colaboradores">Colaboradores</a></li>
       </ul>
       <ul class="rrss">
         <li><a href="https://www.facebook.com/fundaciononce" target="_blank"><img src="icons/facebook.svg"></a></li>

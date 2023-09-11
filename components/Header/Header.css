@@ -8,11 +8,11 @@ a {
 }
 .nav a:hover {
   text-decoration: underline;
-  color: rgb(96, 4, 4);
+  color: var(--titleshover);
 }
 .header {
   position: fixed;
-  background-color: rgb(233, 233, 233);
+  background-color: var(--secondary);
   display: flex;
   flex-direction: column;
   height: auto;
@@ -52,16 +52,16 @@ header * {
   filter: invert(100);
 }
 .nav {
-  background-color: rgb(213, 213, 213);
+  background-color: var(--boxes);
   height: 60px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 30px;
 }
 .nav-list {
-  color: rgb(192, 3, 3);
+  color: var(--titles);
   font-size: 20px;
   font-weight: 600;
   display: flex;
@@ -75,6 +75,7 @@ header * {
   display: flex;
   align-items: center;
   height: auto;
+  width: auto;
   gap: 5px;
 }
 .rrss a {
@@ -97,7 +98,7 @@ header * {
   animation: scale-img 0.3s infinite alternate;
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 890px) {
   .abrir-menu,
   .cerrar-menu {
     display: flex;
@@ -118,7 +119,7 @@ header * {
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: rgb(112, 19, 19);
+    background-color: var(--titleshover);
     justify-content: flex-start;
     align-items: left;
     box-shadow: 0 100vmax 0 100vmax rgba(0, 0, 0, 0.75);
@@ -137,14 +138,14 @@ header * {
     height: auto;
     width: 100%;
     padding: 20px;
-    color: white;
+    color: var(--secondary);
   }
   .nav-list.visible li:hover {
     height: auto;
     width: 100%;
     padding: 20px;
-    color: rgb(192, 6, 6);
-    background-color: aliceblue;
+    color: var(--titleshover);
+    background-color: var(--secondary);
   }
 }
 @media screen and (max-width: 670px) {
