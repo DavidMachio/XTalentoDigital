@@ -17,4 +17,12 @@ a {
 a:hover {
   text-decoration: underline;
 }
+main {
+  padding-top: 172px;
+}
+@media screen and (max-width: 670px) {
+  main {
+    padding-top: 133px;
+  }
+}
 /*ficha de curso*/

@@ -1,7 +1,8 @@
-.footer {
+footer {
   background-color: rgb(233, 233, 233);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
   padding: 20px 10px 40px 10px;
 }
 .generaciond {
@@ -23,15 +24,9 @@
   color: rgb(151, 0, 0);
   text-decoration: underline;
 }
-.social-media {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 5px;
-  gap: 10px;
-}
+
 @media screen and (max-width: 860px) {
-  .footer {
+  footer {
     flex-direction: column;
     gap: 20px;
   }

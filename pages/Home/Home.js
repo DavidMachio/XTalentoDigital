@@ -31,11 +31,11 @@ const printCourses = () => {
              <ul class="date-inscription">
                <li class="inscription">Inscripción hasta el</li>
                <li class="day">${course.day}</li>
-               <li class="month-age">${course.month} ${course.age} </li>
+               <li class="month-age">${course.month} ${course.age}</li>
              </ul>
            <container class="information">
              <section class="title">
-               <h3><a href=${course.url} target="_blank">${course.title}</a></h3>
+               <h3><a href=${course.url}target="_blank">${course.title}</a></h3>
                <button class="subscribe" href= >Inscríbete</button>
              </section>
              <section class="place">
@@ -60,7 +60,7 @@ const printCourses = () => {
                  </span>
                </div>
              </section>
-             <hr class="solid" />
+             <div class="solid"></div>
              <section class="requisites">
                <span>
                  <h4>Requisitos:</h4>
