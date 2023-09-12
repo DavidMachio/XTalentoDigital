@@ -1,0 +1,52 @@
+.xtdcover {
+  width: 100vw;
+  height: auto;
+  object-fit: cover;
+  padding-bottom: 20px;
+}
+.decoration-xtd {
+  height: 20px;
+  width: 150px;
+  background-color: var(--titles);
+  margin-left: 70px;
+  margin-bottom: 40px;
+}
+
+.xtd-page h2 {
+  color: var(--titles);
+  padding: 10px 80px;
+}
+.xtd-page li {
+  list-style-type: disc;
+  margin: 0 100px;
+}
+.xtd-page li::marker {
+  color: var(--titles);
+  scale: 150%;
+}
+
+.only {
+  padding: 10px 80px;
+}
+iframe {
+  padding: 20px 40px;
+  width: 100vw;
+}
+.linkform {
+  color: var(--titles);
+  cursor: pointer;
+  font-weight: 600;
+}
+.colabs {
+  text-decoration: underline;
+}
+.colabs:hover {
+  color: var(--titles);
+  cursor: pointer;
+}
+.politic {
+  text-decoration: underline;
+}
+.politic:hover {
+  color: var(--titles);
+}

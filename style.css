@@ -16,6 +16,9 @@
 p {
   font-size: 17px;
 }
+li {
+  list-style-type: none;
+}
 a {
   text-decoration: none;
   transition: all 0.2s linear;
