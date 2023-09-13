@@ -20,29 +20,41 @@ xtd.addEventListener("click", () => {
 
 const cursos = document.querySelector("#cursos");
 cursos.addEventListener("click", () => {
-  Cursos();
+  Home();
+  const navlist = document.querySelector("#nav-list");
+  navlist.classList.remove("visible");
 });
 
 const becas = document.querySelector("#becas");
 becas.addEventListener("click", () => {
   Becas();
+  const navlist = document.querySelector("#nav-list");
+  navlist.classList.remove("visible");
 });
 
 const blog = document.querySelector("#blog");
 blog.addEventListener("click", () => {
   Blog();
+  const navlist = document.querySelector("#nav-list");
+  navlist.classList.remove("visible");
 });
 
 const alumni = document.querySelector("#alumni");
 alumni.addEventListener("click", () => {
   Alumni();
+  const navlist = document.querySelector("#nav-list");
+  navlist.classList.remove("visible");
 });
 const colaboradores = document.querySelector("#colaboradores");
 colaboradores.addEventListener("click", () => {
   Colaboradores();
+  const navlist = document.querySelector("#nav-list");
+  navlist.classList.remove("visible");
 });
 
 const xtdnav = document.querySelector("#xtdnav");
 xtdnav.addEventListener("click", () => {
   Xtd();
+  const navlist = document.querySelector("#nav-list");
+  navlist.classList.remove("visible");
 });

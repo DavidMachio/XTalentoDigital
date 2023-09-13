@@ -17,7 +17,7 @@
   width: 500px;
   padding: 0 10px;
 }
-.info-programa h2 {
+.info-programa h1 {
   color: var(--titles);
   font-size: 30px;
   padding-bottom: 20px;
@@ -41,10 +41,10 @@
   font-size: 30px;
   padding: 20px;
 }
-h1 {
+h2 {
   font-family: "Courier New", Courier, monospace;
   font-size: 50px;
-  padding: 5px 0;
+  padding: 25px 0;
   margin-left: 60px;
 }
 .decoration {
@@ -52,6 +52,7 @@ h1 {
   height: 20px;
   width: 150px;
   margin-left: 60px;
+  margin-bottom: 40px;
 }
 @media screen and (max-width: 1160px) {
   .info-xtd {
@@ -102,8 +103,8 @@ h1 {
 .course-group {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 10px;
+  justify-content: space-around;
+  padding: 30px 5px;
   gap: 10px;
 }
 .course {
@@ -225,4 +226,65 @@ h1 {
   .course-group {
     justify-content: center;
   }
+}
+
+/*Fichas alumnis*/
+.divider {
+  margin: auto;
+  height: 2px;
+  width: 90%;
+  background-color: var(--boxes);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.alumnis-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+  gap: 10px;
+}
+.alumni-file {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: auto;
+  padding: 10px;
+  text-align: center;
+}
+.alumni-file > h3 {
+  font-family: "Courier New", Courier, monospace;
+  height: 80px;
+  font-size: 30px;
+  margin-top: 20px;
+}
+.alumni-file > img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 29px -1px #818181;
+  box-shadow: 0px 0px 29px -1px #818181;
+}
+@keyframes scale-img {
+  from {
+    scale: 100%;
+  }
+  to {
+    scale: 102%;
+  }
+}
+.alumni-file > img:hover {
+  animation: scale-img 0.5s alternate infinite;
+}
+.alumni-file > p {
+  height: auto;
+  background-color: var(--boxes);
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  text-align: left;
+  font-weight: 600;
 }

@@ -69,21 +69,24 @@ const template = () => {
   <p class="only">Nuestra sede está equipada tecnológicamente con todo lo necesario para el aprendizaje híbrido y colaborativo y el HUB cuenta con una gran pantalla que proporciona una calidad de imagen y sonido diferencial y una experiencia envolvente.</p>
   <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d4613.842315354124!2d-3.7007151829910905!3d40.40501348752975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sC.%20de%20Fray%20Luis%20de%20Le%C3%B3n%2C%2011%20C.%20de%20Fray%20Luis%20de%20Le%C3%B3n%2C%2011%2C%2028012%20Madrid!5e0!3m2!1ses!2ses!4v1694473059142!5m2!1ses!2ses" width="1900" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   <p class="only">Si deseas cursar este tipo de formaciones digitales y tecnológicas y no lo encuentras en nuestro catálogo formativo, pincha en este <a class="linkform">formulario</a> y rellénalo para trasladarnos tu interés.</p>
-  <section>
+  <section class="wantinfo">
   <h2>¿Quieres recibir más información sobre los cursos y becas del Programa Por Talento Digital?</h2>
   <p class="only">Si quieres recibir información de interés sobre los cursos especializados y becas del Programa Por Talento Digital, o no has encontrado en esta web ninguna formación en contenidos digitales y tecnológicos que te interese, rellena el siguiente formulario y cuéntanos qué temática o profesión tecnológica te gustaría que nuestra oferta formativa incluyese.</p>
   <p class="only">Si eres una organización interesada en colaborar con el Programa Por Talento Digital de la Fundación ONCE, rellena el formulario de <a class="colabs">Colaboradores.</a></p>
-  <div>
-  <label id="lastname">Apellidos</label>
-  <input id="lastname" type="text"></input>
-  <label id="firsname">Apellidos</label>
-  <input id="firstname" type="text"></input>
-  <label id="email">Email</label>
-  <input id="email" type="text"></input>
-  <label id="forma-interes">Formación de interés</label>
-  <input id="forma-interes" type="text"></input>
-  <input type="radio">He leído y acepto la <a href="#null"class="politic">política de privacidad.</a></input>
-  </div>
+  <form id="formularioinfo" class="formulario-info">
+    <label for="lastname" class="last-name">Apellidos</label>
+    <input id="lastname" type="text"></input>
+    <label for="firstname" class="first-name">Nombre</label>
+    <input id="firstname" type="text"></input>
+    <label for="email" class="email">Email</label>
+    <input id="email" type="text"></input>
+    <label for="formainteres" class="forma-interes">Formación de interés</label>
+    <input id="forma-interes" type="text"></input>
+    <input type="radio" class="point">He leído y acepto las políticas de privacidad.</input>
+  </form>
+  
+  <p class="privacy">FUNDACIÓN ONCE PARA LA COOPERACIÓN E INCLUSIÓN SOCIAL DE PERSONAS CON DISCAPACIDAD y ASOCIACIÓN INSERTA EMPLEO E INSERTA INNOVACIÓN, como corresponsables del tratamiento, tratarán sus datos personales con la finalidad de contactar con usted e informarle de las actividades y servicios de formación e intermediación laboral que se ofrecen a través del programa “POR TALENTO DIGITAL”, así como tramitar y gestionar su participación en los cursos. La base legítima del tratamiento es su consentimiento. Del mismo modo, no se cederán sus datos personales a terceros, ni están previstas transferencias internacionales de sus datos personales. Por último, se pone en su conocimiento que podrá ejercitar sus derechos de acceso, rectificación y supresión, así como otros derechos, como se explica en la información adicional, pudiendo consultar la misma a través de nuestra Política de privacidad</p>
+  <button class="send">Enviar</button>
   </section>
   </container>
   `;

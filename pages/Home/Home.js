@@ -1,12 +1,13 @@
 import "./Home.css";
 import courses from "../../Data/courses";
+import alumnis from "../../Data/alumnis";
 
 const template = () => {
   return `
   <img class="cover" src="./images/programadores.jpg"/>
   <container class="info-xtd">
   <div class="info-programa">
-    <h2>¿Qué es el Programa Por Talento Digital?</h2>
+    <h1>¿Qué es el Programa Por Talento Digital?</h2>
       <p><span><span class="bold">Por Talento Digital es un programa de formación permanente en competencias digitales y profesiones tecnológicas de la <a href="https://www.fundaciononce.es/es" class="fundao" target="_blank">Fundación ONCE</a></span> orientado a la adquisición de conocimientos y cualificación tecnológica y digital de las personas con discapacidad para favorecer así su inclusión laboral en profesiones con alta demanda en el mercado de trabajo, multiplicando de esta forma sus perspectivas profesionales.</span></p>
   </div>
   <div class="info-becas">
@@ -17,9 +18,15 @@ const template = () => {
     <img src="./images/banner_home.png"/>
   </div>
   </container>
-  <h1>Cursos de formación</h1>
+  <h2>Cursos de formación</h1>
   <div class="decoration"></div>
-  <section id="course-group" class="course-group"></section>`;
+  <section id="course-group" class="course-group"></section>
+  <div class="divider"></div>
+  <h2>Alumni</h1>
+  <div class="decoration"></div>
+  <section id="alumnis-group" class="alumnis-group"></section>
+  <div class="divider"></div>
+  `;
 };
 
 const printCourses = () => {
@@ -74,14 +81,31 @@ const printCourses = () => {
                />
              </section>
            </container>
-           </section> 
+           </section>
+
     `;
     courseGroup.appendChild(article);
+  }
+};
+const printAlumnis = () => {
+  const alumnisGroup = document.querySelector("#alumnis-group");
+  for (const alumni of alumnis) {
+    const articlea = document.createElement("article");
+    articlea.innerHTML = `
+    <container class="alumni-file">
+    <img src="${alumni.img}" alt="${alumni.alt}" class="photoAlumni"/>
+    <h3 class="name">${alumni.fullName}</h3>
+    <p class="preHistory">${alumni.prehistory}</p>
+    </container>
+    
+    `;
+    alumnisGroup.appendChild(articlea);
   }
 };
 const Home = () => {
   document.querySelector("main").innerHTML = template();
   printCourses();
+  printAlumnis();
 };
 
 export default Home;

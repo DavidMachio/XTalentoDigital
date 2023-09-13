@@ -10,6 +10,8 @@ a {
 .header {
   position: fixed;
   background-color: var(--secondary);
+  -webkit-box-shadow: 0px 0px 29px -1px #818181;
+  box-shadow: 0px 0px 29px -1px #818181;
   display: flex;
   flex-direction: column;
   height: auto;
@@ -57,6 +59,7 @@ header * {
   align-items: center;
   padding: 0 30px;
 }
+
 .nav-list {
   color: var(--titles);
   font-size: 20px;
@@ -83,16 +86,18 @@ header * {
 .rrss img {
   height: 40px;
 }
-@keyframes scale-img {
+@keyframes scale-icon {
   from {
     scale: 100%;
+    rotate: 0deg;
   }
   to {
-    scale: 115%;
+    scale: 103%;
+    rotate: -2deg;
   }
 }
 .rrss img:hover {
-  animation: scale-img 0.3s infinite alternate;
+  animation: scale-icon 0.7s infinite alternate;
 }
 
 @media screen and (max-width: 890px) {
@@ -104,6 +109,9 @@ header * {
     background-color: transparent;
     border: none;
     height: auto;
+  }
+  .cerrar-menu {
+    margin-left: 20px;
   }
   .nav-list {
     gap: 0;
@@ -123,6 +131,7 @@ header * {
   }
   .nav-list li a {
     padding: auto;
+    transition-property: opacity 1s linear;
   }
 
   .nav-list.visible {
@@ -134,7 +143,7 @@ header * {
   .nav-list.visible li {
     height: auto;
     width: 100%;
-    padding: 20px;
+    padding: 20px 30px;
     color: var(--secondary);
   }
   .nav-list.visible li:hover {

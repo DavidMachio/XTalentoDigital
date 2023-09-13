@@ -7,7 +7,7 @@ const template = () => {
         <img class="xtd" id="xtd" src="./icons/xtd.png"/ alt="Logotipo de por talento digital">
         <a href="https://gruposocialonce.com/" target="_blank"><img class="gso" src="./icons/gso.png"/ alt="Logotipo grupo social once"></a>
       </div>
-    <nav class="nav">
+    <nav id="nav"class="nav">
     <button class="abrir-menu" id="abrir"><img src="icons/hamburguer.png"/></button>
       <ul class="nav-list" id="nav-list">
       <button class="cerrar-menu" id="cerrar"><img src="icons/cerrar.png"/></button>

@@ -8,13 +8,18 @@
   height: 20px;
   width: 150px;
   background-color: var(--titles);
-  margin-left: 70px;
+  margin-left: 50px;
   margin-bottom: 40px;
+}
+h1 {
+  font-size: 50px;
+  padding: 20px 40px;
 }
 
 .xtd-page h2 {
+  font-size: 35px;
   color: var(--titles);
-  padding: 10px 80px;
+  margin: 10px 40px;
 }
 .xtd-page li {
   list-style-type: disc;
@@ -30,8 +35,20 @@
 }
 iframe {
   padding: 20px 40px;
-  width: 100vw;
+  width: 100%;
+  height: auto;
 }
+.wantinfo {
+  background-color: var(--boxes);
+  padding: 20px 40px;
+  width: 90%;
+  margin: 20px auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .linkform {
   color: var(--titles);
   cursor: pointer;
@@ -44,9 +61,44 @@ iframe {
   color: var(--titles);
   cursor: pointer;
 }
-.politic {
-  text-decoration: underline;
+form {
+  display: grid;
+  grid-template-columns: 2fr 6fr;
+  grid-gap: 20px;
 }
-.politic:hover {
+form label {
+  display: block;
+  font-weight: 600;
+  height: 30px;
+  text-align: right;
+}
+.point {
+  height: 20px;
+}
+
+.forma-interes {
+  height: 60px;
+}
+.privacy {
+  font-size: 10px;
+  color: var(--secondary);
+  background-color: var(--primary);
+  padding: 10px;
+  width: 85%;
+  text-align: justify;
+  margin: 40px 10px;
+}
+.send {
+  border-radius: 6px;
+  border: 1px solid var(--boxes);
   color: var(--titles);
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 5px 60px;
+  transition: all 0.1s linear;
+}
+.send:hover {
+  background-color: var(--titles);
+  color: var(--secondary);
+  cursor: pointer;
 }
